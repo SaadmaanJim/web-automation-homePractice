@@ -2,7 +2,7 @@
 
 End-to-end test automation framework built with **Playwright + TypeScript**, using the **Page Object Model**. Demonstrated on [SauceDemo](https://www.saucedemo.com), a public practice e-commerce site.
 
-![Playwright Tests](https://github.com/YOUR_USERNAME/web-automation-framework/actions/workflows/playwright.yml/badge.svg)
+![Playwright Tests](https://github.com/SaadmaanJim/web-automation-framework/actions/workflows/playwright.yml/badge.svg)
 
 ## Tech Stack
 
