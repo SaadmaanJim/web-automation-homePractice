@@ -1,0 +1,22 @@
+{
+  "name": "web-automation-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test": "playwright test",
+  "test:smoke": "playwright test tests/smoke",
+  "test:regression": "playwright test tests/regression",
+  "test:headed": "playwright test --headed",
+  "report": "playwright show-report",
+  "typecheck": "tsc --noEmit"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "dotenv": "^18.0.10"
+  }
+}
