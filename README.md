@@ -4,7 +4,6 @@
 
 **Scalable end-to-end test automation with Playwright, TypeScript and the Page Object Model**
 
-[![Playwright Tests](https://github.com/YOUR_USERNAME/web-automation-framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/YOUR_USERNAME/web-automation-framework/actions)
 ![Playwright](https://img.shields.io/badge/Playwright-45ba4b?logo=playwright&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=nodedotjs&logoColor=white)
