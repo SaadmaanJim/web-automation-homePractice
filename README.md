@@ -224,7 +224,17 @@ The demo credentials are public on SauceDemo. For a real site, never commit cred
 npm run report
 ```
 
-![Playwright HTML report](docs/images/report.png)
+![Test report 1](docs/images/ss1.png)
+
+![Test report 2](docs/images/ss2.png)
+
+![Test report 3](docs/images/ss3.png)
+
+![Test report 4](docs/images/ss4.png)
+
+![Test report 5](docs/images/ss5.png)
+
+![Test report 6](docs/images/ss6.png)
 
 On failure, a screenshot, video and trace are saved under `test-results/`.
 
