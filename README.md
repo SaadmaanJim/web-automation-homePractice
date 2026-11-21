@@ -39,7 +39,7 @@
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This project is a reusable automation scaffold. It is demonstrated on [SauceDemo](https://www.saucedemo.com), a public practice e-commerce site, and covers authentication, cart and logout flows.
 
@@ -47,17 +47,17 @@ To automate a different website, you add new Page Objects, constants and specs. 
 
 > ⚠️ Only automate websites you own or have permission to test. Check a site's Terms of Service first.
 
-| 📊 Metric | Value |
+| Metric | Value |
 |---|---|
 | Total test cases | **8** |
-| 🔥 Smoke | 3 |
-| 🧪 Regression | 5 |
+|  Smoke | 3 |
+|  Regression | 5 |
 | Page Objects | 3 |
 | Browsers configured | Chromium, Firefox, WebKit, Mobile Chrome |
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -73,21 +73,21 @@ To automate a different website, you add new Page Objects, constants and specs. 
 
 | ID | Title | Area | Suite | Spec file | Status |
 |---|---|---|---|---|---|
-| TC-LOGIN-01 | Valid user can log in and see the product list | 🔑 Login | 🔥 Smoke | `tests/smoke/TC-01-legit-login.spec.ts` | ✅ Automated |
-| TC-LOGIN-02 | Wrong password shows an error and blocks login | 🔑 Login | 🧪 Regression | `tests/regression/login-negative.spec.ts` | ✅ Automated |
-| TC-LOGIN-03 | Locked out user cannot log in | 🔑 Login | 🧪 Regression | `tests/regression/login-negative.spec.ts` | ✅ Automated |
-| TC-LOGIN-04 | Empty username shows a validation error | 🔑 Login | 🧪 Regression | `tests/regression/login-negative.spec.ts` | ✅ Automated |
-| TC-LOGIN-05 | Empty password shows a validation error | 🔑 Login | 🧪 Regression | `tests/regression/login-negative.spec.ts` | ✅ Automated |
-| TC-CART-01 | Product can be added to the cart | 🛒 Cart | 🔥 Smoke | `tests/smoke/cart.spec.ts` | ✅ Automated |
-| TC-CART-02 | Product can be removed from the cart | 🛒 Cart | 🧪 Regression | `tests/regression/cart-remove.spec.ts` | ✅ Automated |
-| TC-AUTH-01 | Logged in user can log out | 🚪 Auth | 🔥 Smoke | `tests/smoke/logout.spec.ts` | ✅ Automated |
+| TC-LOGIN-01 | Valid user can log in and see the product list |  Login |  Smoke | `tests/smoke/TC-01-legit-login.spec.ts` | ✅ Automated |
+| TC-LOGIN-02 | Wrong password shows an error and blocks login |  Login |  Regression | `tests/regression/login-negative.spec.ts` | ✅ Automated |
+| TC-LOGIN-03 | Locked out user cannot log in |  Login |  Regression | `tests/regression/login-negative.spec.ts` | ✅ Automated |
+| TC-LOGIN-04 | Empty username shows a validation error |  Login |  Regression | `tests/regression/login-negative.spec.ts` | ✅ Automated |
+| TC-LOGIN-05 | Empty password shows a validation error |  Login |  Regression | `tests/regression/login-negative.spec.ts` | ✅ Automated |
+| TC-CART-01 | Product can be added to the cart | 🛒 Cart |  Smoke | `tests/smoke/cart.spec.ts` | ✅ Automated |
+| TC-CART-02 | Product can be removed from the cart | 🛒 Cart |  Regression | `tests/regression/cart-remove.spec.ts` | ✅ Automated |
+| TC-AUTH-01 | Logged in user can log out |  Auth |  Smoke | `tests/smoke/logout.spec.ts` | ✅ Automated |
 
 <details>
-<summary><b>📖 Smoke vs Regression: what's the difference?</b></summary>
+<summary><b> Smoke vs Regression: what's the difference?</b></summary>
 
 <br>
 
-| | 🔥 Smoke | 🧪 Regression |
+| |  Smoke |  Regression |
 |---|---|---|
 | **Goal** | Is the site alive and are critical paths working? | Do edge cases and negative scenarios still behave? |
 | **Speed** | Fast | Slower |
@@ -97,7 +97,7 @@ To automate a different website, you add new Page Objects, constants and specs. 
 </details>
 
 <details>
-<summary><b>📝 Test case format used in this project</b></summary>
+<summary><b> Test case format used in this project</b></summary>
 
 <br>
 
@@ -114,7 +114,7 @@ Every test case is designed before it is coded:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 flowchart LR
@@ -137,7 +137,7 @@ flowchart LR
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 web-automation-framework/
@@ -158,7 +158,7 @@ web-automation-framework/
 
 ---
 
-## 💡 Design Decisions
+## Design Decisions!
 
 | Practice | Why it matters |
 |---|---|
@@ -173,7 +173,7 @@ web-automation-framework/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 **Prerequisites:** [Node.js 20+](https://nodejs.org) and [Git](https://git-scm.com).
 
@@ -203,7 +203,7 @@ The demo credentials are public on SauceDemo. For a real site, never commit cred
 
 ---
 
-## ▶️ Running Tests
+## Running Tests
 
 | Command | What it does |
 |---|---|
@@ -218,7 +218,7 @@ The demo credentials are public on SauceDemo. For a real site, never commit cred
 
 ---
 
-## 📊 Test Report
+## Test Report
 
 ```powershell
 npm run report
@@ -253,7 +253,7 @@ The trace shows every action, a DOM snapshot at each step, network calls and con
 
 ---
 
-## ⚙️ Continuous Integration
+## Continuous Integration
 
 Every push and pull request triggers a GitHub Actions workflow:
 
@@ -269,7 +269,7 @@ The HTML report is attached to each run as the `playwright-report` artifact.
 
 ---
 
-## ➕ Adding a New Test
+## Adding a New Test
 
 1. **Design first:** write the test case (ID, title, preconditions, steps, expected result).
 2. **Locators:** find them with `npx playwright codegen <url>`.
@@ -293,6 +293,5 @@ CSE student, American International University-Bangladesh (AIUB)
 
 <div align="center">
 
-⭐ If you found this useful, consider starring the repo.
 
 </div>
