@@ -21,7 +21,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Tech Stack](#-tech-stack)
@@ -42,10 +42,6 @@
 ## Overview
 
 This project is a reusable automation scaffold. It is demonstrated on [SauceDemo](https://www.saucedemo.com), a public practice e-commerce site, and covers authentication, cart and logout flows.
-
-To automate a different website, you add new Page Objects, constants and specs. The config, fixtures and CI stay the same.
-
-> ⚠️ Only automate websites you own or have permission to test. Check a site's Terms of Service first.
 
 | Metric | Value |
 |---|---|
@@ -69,7 +65,7 @@ To automate a different website, you add new Page Objects, constants and specs. 
 
 ---
 
-## ✅ Test Case Matrix
+## Test Case Matrix
 
 | ID | Title | Area | Suite | Spec file | Status |
 |---|---|---|---|---|---|
