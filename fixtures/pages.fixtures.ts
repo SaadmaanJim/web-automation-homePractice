@@ -3,11 +3,12 @@ import { LoginPage } from '../pages/loginPages';
 import { InventoryPage } from '../pages/inventoryPages';
 import { CartPage } from '../pages/cartPages';
 import { getEnv } from '../utils/env';
-
+import { CheckoutPage } from '../pages/checkOut';
 type Pages = {
   inventoryPage: InventoryPage; 
   cartPage: CartPage;
   loginPage: LoginPage;
+  checkoutPage: CheckoutPage;
 };
 
 export const test = base.extend<Pages>({
@@ -23,6 +24,10 @@ export const test = base.extend<Pages>({
   loginPage: async ({ page }, use) => {
     await use(new LoginPage(page));
   },
+  checkoutPage: async ({ page }, use) => {
+    await use(new CheckoutPage(page));
+  }
+
 });
 
 export { expect } from '@playwright/test';
