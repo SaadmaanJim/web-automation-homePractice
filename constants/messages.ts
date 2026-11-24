@@ -33,4 +33,12 @@ export const TEST_DATA = {
   SECOND_PRODUCT_SLUG: 'sauce-labs-bike-light',
 } as const;
 
+export const SORT_OPTIONS = {
+  NAME_ASC: 'az',
+  NAME_DESC: 'za',
+  PRICE_ASC: 'lohi',
+  PRICE_DESC: 'hilo'
+} as const;
+
 export const CONFIRMATION_TEXT = 'Thank you for your order!';
+export const EXPECTED_PRODUCT_COUNT = 6;
