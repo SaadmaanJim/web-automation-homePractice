@@ -4,11 +4,13 @@ import { InventoryPage } from '../pages/inventoryPages';
 import { CartPage } from '../pages/cartPages';
 import { getEnv } from '../utils/env';
 import { CheckoutPage } from '../pages/checkOut';
+import { ProductDetailsPage } from '../pages/productDetailsPage';
 type Pages = {
   inventoryPage: InventoryPage; 
   cartPage: CartPage;
   loginPage: LoginPage;
   checkoutPage: CheckoutPage;
+  productDetailsPage: ProductDetailsPage;
 };
 
 export const test = base.extend<Pages>({
@@ -26,6 +28,9 @@ export const test = base.extend<Pages>({
   },
   checkoutPage: async ({ page }, use) => {
     await use(new CheckoutPage(page));
+  },
+  productDetailsPage: async ({ page }, use) => {
+    await use(new ProductDetailsPage(page));
   }
 
 });

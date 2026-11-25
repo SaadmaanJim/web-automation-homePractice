@@ -50,4 +50,8 @@ export class InventoryPage {
     return pricesText.map(price => parseFloat(price.replace('$', '')));
   }
 
+  async openProductDetail(productId: number): Promise<void> {
+  await this.page.locator(`[data-test="item-${productId}-title-link"]`).click();
 }
+  }
+
